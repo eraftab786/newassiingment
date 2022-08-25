@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+
+
+
+li,
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+input:focus {
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+
+.aside1 {
+    width: 70px;
+    background: #E8E8E8;
+    padding: 20px;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.aside1 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.aside1 ul li {
+    margin-bottom: 20px;
+}
+
+.aside1 ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.aside1 ul li:nth-of-type(2) {
+    margin-top: auto;
+}
+
+.aside1>ul>li>img {
+    width: 25px;
+}
+
+.profile-img {
+    position: relative;
+}
+
+.profile-img img {
+    width: 50px;
+}
+
+.profile-img>span {
+    height: 10px;
+    width: 10px;
+    background: #1BB157;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    border-radius: 50%;
+}
+
+.list-box {
+    padding: 20px 20px 20px 90px;
+    background: #F1F1F1;
+    width: 345px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-box input {
+    padding: 10px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 25px;
+}
+
+.list-box input::placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    color: rgba(60, 60, 60, 0.5);
+
+}
+
+.list-box h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 25px;
+}
+
+.list-box h3 {
+    color: rgba(60, 60, 60, 0.7);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+ul#segment-name-list li {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #181818;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+ul#segment-name-list li:hover .segment-name {
+    color: #334BFA;
+
+}
+
+ul#segment-name-list li .emoji {
+    margin-right: 10px;
+}
+
+.list-box>button {
+    background: #334BFA;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 12px;
+    color: #FFFFFF;
+    border: 0px;
+    padding: 10px;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+.list-box>button i {
+    margin-right: 10px;
+}
+
+.main {
+    flex: 1;
+
+}
+
+.hmenu-items {
+    display: flex;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.h-line {
+    height: 1px;
+    background: #CCCCCC;
+    width: 85%;
+    margin: 0 auto;
+}
+
+ul.hmenu-items li {
+    color: #888888;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+ul.hmenu-items i {
+    margin-left: 10px;
+}
+
+.main-body {
+    padding: 50px;
+}
+
+.segment-header {
+    color: #3C3C3C;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 12px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.segment-header .emoji {
+    margin-right: 10px;
+}
+
+.segment-header i {
+    margin-left: 10px;
+}
+
+.table-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.table-list {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.table-card {
+    margin-right: 50px;
+    width: 80px;
+}
+
+.table-card>div {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    position: relative;
+    font-size: 25px;
+}
+
+.color-indicator {
+    height: 10px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.table-card p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    align-items: center;
+    color: #181818;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.add-table {
+    background: #FFFFFF;
+    border: 2px solid #3C3C3C;
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+
+.add-table:hover {
+    background: #FFFFFF;
+    border: 2px solid #334BFA;
+    box-shadow: 0px 5px 5px rgba(51, 75, 250, 0.25);
+    border-radius: 10px;
+    color: #334BFA;
+    cursor: pointer;
+}
+
+.segments-section {
+    margin-bottom: 20px;
+}
+
+.addsegmentsform {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display:none;
+    transition:all 0.3s ease-in-out;
+}
+
+form label {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #3C3C3C;
+    margin: 10px 0px;
+    text-transform: capitalize;
+}
+
+form input , form textarea {
+    padding: 6px;
+    border: 1px solid black;
+    width: 470px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 0.5px solid #888888;
+    max-width: 100%;
+    border-radius:5px;
+}
+
+.f-control {
+    position: relative;
+}
+
+.f-control span{
+    position:absolute;
+    right:10px;
+    top:50%;
+    transform:translate(0% , -30%);
+    display:block;
+    height:100%;
+    width:50px;
+    text-align: right;
+}
+
+.f-control span{
+
+}
+
+form textarea{
+    width:100%;
+    height:124px;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.modal-header h4{
+    font-size:22px;
+
+
+}
+
+.modal-header button{
+    border:0px;
+    background-color: transparent;
+}
+
+.modal-header button {
+    color: #888888;
+}
+
+textarea:focus{
+    outline-color:#334BFA; 
+}
+
+.button-sec button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #334BFA;
+    padding: 8px 30px;
+    border: 2px solid transparent;
+    background: transparent;
+    margin: 25px 10px 0px 0px;
+   
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    cursor:pointer;
+}
+
+form .save-btn , form .table-save-btn{
+    background: rgba(60, 60, 60, 0.5);
+    color:#fff;
+}
+
+form .cancel-btn{
+   border-color:#334BFA;
+}
+
